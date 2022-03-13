@@ -1,0 +1,5 @@
+Burak GÜLMerhaba
+Benim adım Burak GÜL.
+ FileWriter sınıfının write metodunu test ediyorum.Merhaba
+Benim adım Burak GÜL.
+ FileWriter sınıfının write metodunu test ediyorum.

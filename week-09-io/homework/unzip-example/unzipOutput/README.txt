@@ -1,0 +1,1 @@
+Bu text file ziplenmiştir.

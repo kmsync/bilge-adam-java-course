@@ -1,0 +1,3 @@
+Tarih-Saat: Sat Mar 05 11:19:41 TRT 2022 Workout:burpee=20, pushup=30, situp=40, squat=50
+Tarih-Saat: Sat Mar 05 11:23:18 TRT 2022 Workout:burpee=20, pushup=30, situp=40, squat=50
+Tarih-Saat: Sat Mar 05 11:23:38 TRT 2022 Workout:burpee=10, pushup=30, situp=40, squat=50
