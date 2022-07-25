@@ -1,0 +1,158 @@
+{
+  "info": {
+    "_postman_id": "30ad4b4c-8545-46bb-a880-095d12afa24d",
+    "name": "mokapi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "/access-header",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://mokapi.burakgul.com.tr/access-header",
+          "protocol": "https",
+          "host": [
+            "mokapi",
+            "burakgul",
+            "com",
+            "tr"
+          ],
+          "path": [
+            "access-header"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/users",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Access-Key",
+            "value": "ewojbgpbck",
+            "type": "default"
+          }
+        ],
+        "url": {
+          "raw": "https://mokapi.burakgul.com.tr/users",
+          "protocol": "https",
+          "host": [
+            "mokapi",
+            "burakgul",
+            "com",
+            "tr"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/users/{ID}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Access-Key",
+            "value": "ewojbgpbck",
+            "type": "default"
+          }
+        ],
+        "url": {
+          "raw": "https://mokapi.burakgul.com.tr/users/6291e1a8343c6463541b4bc8",
+          "protocol": "https",
+          "host": [
+            "mokapi",
+            "burakgul",
+            "com",
+            "tr"
+          ],
+          "path": [
+            "users",
+            "6291e1a8343c6463541b4bc8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/users",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Access-Key",
+            "value": "ewojbgpbck",
+            "type": "default"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n  {\r\n    \"name\": \"Deneme\",\r\n    \"username\": \"burakgul\",\r\n    \"email\": \"burakkggul@gmail.com\",\r\n    \"addresses\": [\r\n      {\r\n        \"addressName\": \"Home\",\r\n        \"addressLine\": \"Altay Eryaman\",\r\n        \"country\": \"Turkey\",\r\n        \"city\": \"Ankara\",\r\n        \"zipcode\": \"06910\",\r\n        \"geolocation\": {\r\n          \"latitude\": 39.966655,\r\n          \"longitude\": 32.632975\r\n        },\r\n        \"communicationPreference\": {\r\n          \"sms\": false,\r\n          \"email\": true\r\n        }\r\n      }\r\n    ],\r\n    \"active\": true,\r\n    \"phone\": \"90 543 443 04 68\",\r\n    \"website\": \"www.burakgul.com.tr\",\r\n    \"company\": {\r\n      \"name\": \"string\",\r\n      \"catchPhrase\": \"string\"\r\n    }\r\n  }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://mokapi.burakgul.com.tr/users",
+          "protocol": "https",
+          "host": [
+            "mokapi",
+            "burakgul",
+            "com",
+            "tr"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/users/{ID}",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Access-Key",
+            "value": "ewojbgpbck",
+            "type": "default"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"En son eklediğim kaydı değiştirdim.\",\r\n  \"username\": \"burakgul\",\r\n  \"email\": \"burakkggul@gmail.com\",\r\n  \"addresses\": [\r\n    {\r\n      \"addressName\": \"Home\",\r\n      \"addressLine\": \"Altay Eryaman\",\r\n      \"country\": \"Turkey\",\r\n      \"city\": \"Ankara\",\r\n      \"zipcode\": \"06910\",\r\n      \"geolocation\": {\r\n        \"latitude\": 39.966655,\r\n        \"longitude\": 32.632975\r\n      },\r\n      \"communicationPreference\": {\r\n        \"sms\": false,\r\n        \"email\": true\r\n      }\r\n    }\r\n  ],\r\n  \"active\": true,\r\n  \"phone\": \"90 543 443 04 68\",\r\n  \"website\": \"www.burakgul.com.tr\",\r\n  \"company\": {\r\n    \"name\": \"string\",\r\n    \"catchPhrase\": \"string\"\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://mokapi.burakgul.com.tr/users/6291e1a8343c6463541b4bc8",
+          "protocol": "https",
+          "host": [
+            "mokapi",
+            "burakgul",
+            "com",
+            "tr"
+          ],
+          "path": [
+            "users",
+            "6291e1a8343c6463541b4bc8"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

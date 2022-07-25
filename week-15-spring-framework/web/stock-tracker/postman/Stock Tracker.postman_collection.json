@@ -1,0 +1,464 @@
+{
+  "info": {
+    "_postman_id": "78e9309e-c77e-4fca-a1bc-ded2f2d03153",
+    "name": "Stock Tracker",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "stock",
+      "item": [
+        {
+          "name": "/stock",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/stock",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stock"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "/stock",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/stock",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "stock"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 02 Jun 2022 17:39:26 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": 6,\n        \"name\": \"Laptop\",\n        \"quantity\": 100,\n        \"boughtPrice\": 15000,\n        \"sellPrice\": 20000,\n        \"stockCode\": 5172740812,\n        \"barcode\": 2196161347,\n        \"unit\": {\n            \"id\": 17,\n            \"name\": \"Adet\"\n        }\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Buğday\",\n        \"quantity\": 50,\n        \"boughtPrice\": 50000,\n        \"sellPrice\": 70000,\n        \"stockCode\": 1175928207,\n        \"barcode\": 6266827164,\n        \"unit\": {\n            \"id\": 19,\n            \"name\": \"Ton\"\n        }\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Kömür\",\n        \"quantity\": 500,\n        \"boughtPrice\": 50000,\n        \"sellPrice\": 70000,\n        \"stockCode\": 2954139758,\n        \"barcode\": 2595393645,\n        \"unit\": {\n            \"id\": 15,\n            \"name\": \"Kilogram\"\n        }\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Altın\",\n        \"quantity\": 500,\n        \"boughtPrice\": 950,\n        \"sellPrice\": 980,\n        \"stockCode\": 3005119297,\n        \"barcode\": 9247383775,\n        \"unit\": {\n            \"id\": 16,\n            \"name\": \"Gram\"\n        }\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "/stock?id=x",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/stock?id=1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stock"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/stock?barcode=x&stockCode=y",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/stock?barcode=8392571745&stockCode=5062861075",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stock"
+              ],
+              "query": [
+                {
+                  "key": "barcode",
+                  "value": "8392571745"
+                },
+                {
+                  "key": "stockCode",
+                  "value": "5062861075"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/stock",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\":\"Altın\",\n    \"quantity\":500,\n    \"boughtPrice\": 950,\n    \"sellPrice\":980,\n    \"unit\":{\n        \"id\":16\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/stock",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stock"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/stock",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": " {\n        \"id\": 5,\n        \"name\": \"Laptop\",\n        \"quantity\": 50,\n        \"boughtPrice\": 25000.0,\n        \"sellPrice\": 35000.0,\n        \"stockCode\": 45454545,\n        \"barcode\": 5445445,\n        \"unit\": {\"id\":11}\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/stock",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stock"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/stock/{id}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/stock/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stock",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/stock/statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/stock/statistics",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stock",
+                "statistics"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/stock/alternative/statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/stock/alternative/statistics",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stock",
+                "alternative",
+                "statistics"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/stock/sell?barcode=x&stockCode=y",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/stock/sell?barcode=8392571745&stockCode=5062861075",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stock",
+                "sell"
+              ],
+              "query": [
+                {
+                  "key": "barcode",
+                  "value": "8392571745"
+                },
+                {
+                  "key": "stockCode",
+                  "value": "5062861075"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/stock?quantity=x",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "/stock?barcode=x",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/stock?barcode=9247383775",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stock"
+              ],
+              "query": [
+                {
+                  "key": "barcode",
+                  "value": "9247383775"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/stock/projection?barcode=x",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/stock/projection?barcode=9247383775",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stock",
+                "projection"
+              ],
+              "query": [
+                {
+                  "key": "barcode",
+                  "value": "9247383775"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "unit",
+      "item": [
+        {
+          "name": "/unit",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/unit",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "unit"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/unit?id=x",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/unit?id=9",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "unit"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "9"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/unit",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"id\": 1,\n    \"name\":\"Metre\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/unit",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "unit"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/unit",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"id\":9,\n    \"name\":\"Gram\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/unit",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "unit"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/unit/{id}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/unit/8",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "unit",
+                "8"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
